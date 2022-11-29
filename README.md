@@ -27,6 +27,7 @@ Challenge:
 
 
 4. Challenge:
+
 4.1. Create a task deploys a file with the following content to /tmp/test1 in all hosts:
 
 root@:~/# cat copyfile/tasks/main.yml
