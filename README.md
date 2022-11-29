@@ -5,11 +5,13 @@
 root@:~/# git clone https://github.com/omriv88/hw-14.git
 
 root@:~/# cat install/tasks/main.yml
-- hosts: servers
+---
+- name: install Zip and vim
+  apt: name=vim,zip state=present
 
-  roles:
-    - install
-   
+
+
+
  
 root@vagrant:~/ansible-lab/lab# cat install/tasks/main.yml
 ---
