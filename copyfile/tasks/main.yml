@@ -1,3 +1,3 @@
 ---
-- name: Copy text file
+- name: Copy Helloworld file to servers
   copy: src=helloworld.txt dest=/var/tmp/test1/
