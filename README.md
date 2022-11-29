@@ -20,7 +20,11 @@ root@:~/# cat install/tasks/main.yml
 ansible-playbook config.yml
 
 
+
+
+
 Challenge:
+
 
 4. Challenge:
 4.1 Create a task deploys a file with the following content to /tmp/test1 in all hosts:
