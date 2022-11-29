@@ -1,31 +1,33 @@
 # hw-14
 
+1) Write a tasks file that installs vim and zip on the servers 
+   (https://github.com/omriv88/hw-14/blob/main/install/tasks/main.yml):
+    ---
+    - name: install Zip and vim
+      apt: name=vim,zip state=present
 
-  1) Write a tasks file that installs vim and zip on the servers 
-     (https://github.com/omriv88/hw-14/blob/main/install/tasks/main.yml):
-     ---
-     - name: install Zip and vim
-       apt: name=vim,zip state=present
 
 
-   2) Write an ansible role called common that uses the role from task 1 (https://github.com/omriv88/hw-14/blob/main/config.yml): 
 
-      ---
-      - hosts: servers
-        roles:
-          - install
+2) Write an ansible role called common that uses the role from task 1 
+   (https://github.com/omriv88/hw-14/blob/main/config.yml): 
+---
+- hosts: servers
+  roles:
+    - install
 
-   3) Write a playbook to call your role from the main directory:
+
+
+3) Write a playbook to call your role from the main directory:
+    ansible-playbook config.yml
  
-      ansible-playbook config.yml
- 
-   4) Challenge:
-    4.1) Create a task deploys a file with the following content to /tmp/test1 in all
-          hosts(Hello world!):
-          (https://github.com/omriv88/hw-14/blob/main/copyfile/tasks/main.yml):
-            ---
-            - name: Copy text file
-              copy: src=helloworld.txt dest=/var/tmp/test1/
+4) Challenge:
+4.1) Create a task deploys a file with the following content to /tmp/test1 in all
+      hosts(Hello world!):
+       (https://github.com/omriv88/hw-14/blob/main/copyfile/tasks/main.yml):
+        ---
+        - name: Copy text file
+          copy: src=helloworld.txt dest=/var/tmp/test1/
 
    
    4.2)  Create a role that deploys a template with the following content to /tmp/test2 in all
