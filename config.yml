@@ -3,4 +3,3 @@
 
   roles:
     - install
-    - copyfile
