@@ -1,4 +1,3 @@
 ---
-# tasks file for install
 - name: install Zip and vim
   apt: name=vim,zip state=present
