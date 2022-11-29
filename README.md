@@ -7,8 +7,14 @@ root@:~/# git clone https://github.com/omriv88/hw-14.git
 root@:~/# cat install/tasks/main.yml
 
 
+2. Write an ansible role called common that uses the role from task 1:
 
-
+root@vagrant:~/ansible-lab/lab# cat install/tasks/main.yml
+(
+---
+- name: install Zip and vim
+  apt: name=vim,zip state=present
+)
 
  
 root@vagrant:~/ansible-lab/lab# cat install/tasks/main.yml
