@@ -1,6 +1,7 @@
 # hw-14
 
-1) Write a tasks file that installs vim and zip on the servers:
+1. Write a tasks file that installs vim and zip on the servers
+output:
    root@ubuntu:~/# git clone https://github.com/omriv88/hw-14.git
    root@root:~/# cat install/tasks/main.yml
    ---
