@@ -3,6 +3,7 @@
 1. Write a tasks file that installs vim and zip on the servers
 
 root@:~/# git clone https://github.com/omriv88/hw-14.git
+
 root@:~/# cat install/tasks/main.yml
 ---
 - name: install Zip and vim
