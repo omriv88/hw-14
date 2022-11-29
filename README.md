@@ -5,11 +5,17 @@
 root@:~/# git clone https://github.com/omriv88/hw-14.git
 
 root@:~/# cat install/tasks/main.yml
+
+
 ---
 - name: install Zip and vim
 apt: name=vim,zip state=present
 .     
-    
+ 
+ 
+ 
+ 
+ 
 
 2) Write an ansible role called common that uses the role from task 1 
    root@root:~/# cat config.yml
