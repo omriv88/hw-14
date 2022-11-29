@@ -12,7 +12,7 @@ root@:~/# cat install/tasks/main.yml
 
 2. Write an ansible role called common that uses the role from task 1:
 
-root@:~/# cat install/tasks/main.yml
+root@:~/# cat config.yml
 
 
 3. Write a playbook to call your role from the main directory:
