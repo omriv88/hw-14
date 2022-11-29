@@ -1,0 +1,9 @@
+---
+- hosts: servers
+  serial: 1
+  tasks:
+
+  - name: Get hostname
+    template:
+        src: hostname.j2
+        dest: /var/tmp/hostname.conf
