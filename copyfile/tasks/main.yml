@@ -1,0 +1,4 @@
+---
+# tasks file for copy
+- name: Copy text file
+  copy: src=helloworld.txt dest=/var/tmp/test1/
