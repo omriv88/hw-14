@@ -8,13 +8,12 @@ root@:~/# cat install/tasks/main.yml
 
 
 2. Write an ansible role called common that uses the role from task 1:
+root@:~/# cat install/tasks/main.yml
 
-root@vagrant:~/ansible-lab/lab# cat install/tasks/main.yml
-(
----
-- name: install Zip and vim
-  apt: name=vim,zip state=present
-)
+
+3. Write a playbook to call your role from the main directory:
+
+
 
  
 root@vagrant:~/ansible-lab/lab# cat install/tasks/main.yml
